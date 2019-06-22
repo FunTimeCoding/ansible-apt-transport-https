@@ -1,1 +1,5 @@
 ---
+- apt:
+    name: apt-transport-https
+  remote_user: root
+  when: ansible_system == 'Linux'
